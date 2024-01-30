@@ -1,0 +1,14 @@
+.drops {
+	width: 100%;
+	height: fit-content;
+	margin-top: -5px;
+}
+
+.drops > svg {
+	width: 100%;
+	fill: var(--primary);
+}
+
+.rotate {
+	transform: rotate(180deg);
+}

@@ -1,4 +1,4 @@
-# Banana Codes
+# banana codes
 
 ### Сначала установить зависимости: `npm install`
 

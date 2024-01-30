@@ -1,8 +1,16 @@
 import styles from './MainPage.module.css';
 import { Toaster } from 'react-hot-toast';
+import { useRouter } from 'next/router';
+import { AboutBlock } from '../../components/AboutBlock/AboutBlock';
+import { DropsBlock } from '../../components/DropsBlock/DropsBlock';
+import { MainBlock } from '../../components/MainBlock/MainBlock';
+import { TitleBlock } from '../../components/TitleBlock/TitleBlock';
+import { setLocale } from '../../helpers/locale.helper';
 
 
 export const MainPage = (): JSX.Element => {
+    const router = useRouter();
+    
     return (
         <>
             <Toaster
@@ -13,7 +21,15 @@ export const MainPage = (): JSX.Element => {
 				}}
 			/>
             <div className={styles.wrapper}>
-                
+                <MainBlock />
+                <DropsBlock isRotate={false} />
+                <div className={styles.blocksDiv}>
+                    <TitleBlock text={setLocale(router.locale).about} />
+                    <AboutBlock />
+                    <TitleBlock text={setLocale(router.locale).projects} />
+                    <TitleBlock text={setLocale(router.locale).contacts} />
+                </div>
+                <DropsBlock isRotate={true} />
             </div>
         </>
     );

@@ -1,0 +1,12 @@
+.aboutBlock {
+	width: 100%;
+	height: fit-content;
+}
+
+.aboutBlock > h1 {
+	color: var(--white);
+}
+
+.aboutBlock > h1 > span {
+	color: var(--primary);
+}
