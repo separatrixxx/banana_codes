@@ -5,7 +5,7 @@
 
 	width: 25%;
 	height: fit-content;
-	margin-top: 20px;
+	margin-top: 25px;
 }
 
 .button {
@@ -82,6 +82,7 @@
 @media (max-width: 1024px) {
 	.buttonDiv {
 		width: 30%;
+		margin-top: 20px;
 	}
 
 	.button {
@@ -100,7 +101,7 @@
 @media (max-width: 580px) {
 	.buttonDiv {
 		width: 35%;
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 
 	.button {
@@ -119,5 +120,6 @@
 @media (max-width: 300px) {
 	.buttonDiv {
 		width: 40%;
+		margin-top: 10px;
 	}
 }
