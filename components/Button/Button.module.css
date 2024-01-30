@@ -1,0 +1,123 @@
+.buttonDiv {
+	position: relative;
+
+	display: grid;
+
+	width: 25%;
+	height: fit-content;
+	margin-top: 20px;
+}
+
+.button {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 40px;
+
+	cursor: pointer;
+	transition-duration: 300ms;
+
+	color: var(--white);
+	border: 3px solid var(--primary);
+	outline: none;
+	background: var(--primary);
+
+	font-family: var(--font-family);
+
+	font-size: 18px;
+}
+
+.pad {
+	position: absolute;
+	z-index: 1;
+	top: 5px;
+	left: 5px;
+
+	width: 100%;
+	height: 40px;
+
+	cursor: pointer;
+	transition-duration: 300ms;
+
+	background: var(--white);
+}
+
+.buttonDiv:active > .button,
+.buttonDiv:focus > .button {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	color: var(--primary);
+	border-color: var(--white);
+	background: var(--white);
+}
+
+.buttonDiv:active > .pad,
+.buttonDiv:focus > .pad {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transform: translate(2px, 2px);
+
+	background: var(--primary);
+}
+
+@media (min-width: 1024px) {
+	.buttonDiv:hover > .button {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		color: var(--primary);
+		border-color: var(--white);
+		background: var(--white);
+	}
+
+	.buttonDiv:hover > .pad {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transform: translate(2px, 2px);
+
+		background: var(--primary);
+	}
+}
+
+@media (max-width: 1024px) {
+	.buttonDiv {
+		width: 30%;
+	}
+
+	.button {
+		height: 35px;
+
+		font-size: 16px;
+	}
+
+	.pad {
+		left: 6px;
+
+		height: 35px;
+	}
+}
+
+@media (max-width: 580px) {
+	.buttonDiv {
+		width: 35%;
+		margin-top: 10px;
+	}
+
+	.button {
+		height: 30px;
+
+		font-size: 14px;
+	}
+
+	.pad {
+		left: 5px;
+
+		height: 30px;
+	}
+}
+
+@media (max-width: 300px) {
+	.buttonDiv {
+		width: 40%;
+	}
+}

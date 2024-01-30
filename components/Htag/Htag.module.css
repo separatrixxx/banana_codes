@@ -37,7 +37,7 @@
 }
 
 .s {
-	font-size: 12px;
+	font-size: 20px;
 	font-weight: 400;
 	font-style: normal;
 	line-height: normal;
@@ -62,7 +62,7 @@
 	}
 
 	.s {
-		font-size: 10px;
+		font-size: 16px;
 	}
 }
 
@@ -85,7 +85,7 @@
 	}
 
 	.s {
-		font-size: 12px;
+		font-size: 14px;
 	}
 }
 
@@ -100,6 +100,10 @@
 	}
 
 	.l {
+		font-size: 12px;
+	}
+
+	.s {
 		font-size: 12px;
 	}
 }

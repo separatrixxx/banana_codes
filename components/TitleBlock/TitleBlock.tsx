@@ -6,7 +6,7 @@ import { Htag } from '../Htag/Htag';
 export const TitleBlock = ({ text }: TitleBlockProps): JSX.Element => {
     return (
         <Htag tag='xxl' className={styles.title}>
-            {'//' + text}
+            {'// ' + text}
         </Htag>
     );
 }

@@ -9,4 +9,11 @@ export const en = {
     about_text: " is a web studio specializing in the development of high-quality and innovative web products. We offer a full range of services and are ready to take on projects of any size. Join us and let's create a web product that will attract the attention of your audience!",
     projects: "projects",
     contacts: "contacts",
+    all_rights_reserved: "All rights reserved.",
+    or: "or",
+    name: "name",
+    email: "email",
+    phone: "phone",
+    message: "message",
+    send: "send",
 };

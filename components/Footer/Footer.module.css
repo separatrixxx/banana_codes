@@ -1,0 +1,33 @@
+.footer {
+	display: grid;
+
+	width: 100%;
+	height: fit-content;
+	margin-top: -5px;
+
+	background: var(--primary);
+	justify-items: center;
+}
+
+.footerDiv {
+	display: grid;
+
+	width: 77%;
+	height: fit-content;
+	padding: 40px 0;
+	grid-template-columns: 1fr auto;
+}
+
+@media (max-width: 1024px) {
+	.footerDiv {
+		width: 80%;
+	}
+}
+
+@media (max-width: 580px) {
+	.footerDiv {
+		width: 85%;
+		grid-template-columns: auto;
+		gap: 20px;
+	}
+}

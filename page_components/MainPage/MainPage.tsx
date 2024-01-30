@@ -6,6 +6,8 @@ import { DropsBlock } from '../../components/DropsBlock/DropsBlock';
 import { MainBlock } from '../../components/MainBlock/MainBlock';
 import { TitleBlock } from '../../components/TitleBlock/TitleBlock';
 import { setLocale } from '../../helpers/locale.helper';
+import { Footer } from '../../components/Footer/Footer';
+import { ContactsBlock } from '../../components/ContactsBlock/ContactsBlock';
 
 
 export const MainPage = (): JSX.Element => {
@@ -28,8 +30,10 @@ export const MainPage = (): JSX.Element => {
                     <AboutBlock />
                     <TitleBlock text={setLocale(router.locale).projects} />
                     <TitleBlock text={setLocale(router.locale).contacts} />
+                    <ContactsBlock />
                 </div>
                 <DropsBlock isRotate={true} />
+                <Footer />
             </div>
         </>
     );
