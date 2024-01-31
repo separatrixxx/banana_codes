@@ -28,6 +28,7 @@
 	font-family: var(--font-family);
 
 	font-size: 18px;
+	font-weight: 600;
 }
 
 .pad {
@@ -60,6 +61,10 @@
 	transform: translate(2px, 2px);
 
 	background: var(--primary);
+}
+
+.button_loading {
+	cursor: not-allowed;
 }
 
 @media (min-width: 1024px) {
