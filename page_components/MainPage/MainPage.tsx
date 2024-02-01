@@ -8,10 +8,20 @@ import { TitleBlock } from '../../components/TitleBlock/TitleBlock';
 import { setLocale } from '../../helpers/locale.helper';
 import { Footer } from '../../components/Footer/Footer';
 import { ContactsBlock } from '../../components/ContactsBlock/ContactsBlock';
+import { ProjectsList } from '../../components/ProjectsComponents/ProjectsList/ProjectsList';
+import { useEffect, useState } from 'react';
+import { getProjects } from '../../helpers/projects.helper';
+import { ProjectInterface } from '../../interfaces/project.interface';
 
 
 export const MainPage = (): JSX.Element => {
     const router = useRouter();
+
+    const [projects, setProjects] = useState<ProjectInterface[]>([]);
+
+    useEffect(() => {
+        setProjects(getProjects());
+	}, []);
     
     return (
         <>
@@ -29,6 +39,7 @@ export const MainPage = (): JSX.Element => {
                     <TitleBlock text={setLocale(router.locale).about} />
                     <AboutBlock />
                     <TitleBlock text={setLocale(router.locale).projects} />
+                    <ProjectsList projects={projects} />
                     <TitleBlock text={setLocale(router.locale).contacts} />
                     <ContactsBlock />
                 </div>
