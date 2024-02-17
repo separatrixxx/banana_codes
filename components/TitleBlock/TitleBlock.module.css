@@ -1,7 +1,10 @@
 .title {
+	z-index: 10;
+
 	margin-top: 40px;
 
 	color: var(--white);
+	background: var(--dark);
 
 	font-weight: 600;
 }

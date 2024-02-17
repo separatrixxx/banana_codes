@@ -1,6 +1,10 @@
 .aboutBlock {
+	z-index: 10;
+
 	width: 100%;
 	height: fit-content;
+
+	background: var(--dark);
 }
 
 .aboutBlock > h1 {

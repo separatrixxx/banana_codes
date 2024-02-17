@@ -21,7 +21,7 @@ export default function Project({ project }: ProjectProps) {
 				<meta charSet="utf-8" />
 				<link rel="icon" href="/logo.svg" type='image/svg+xml' />
 			</Head>
-			<ProjectPage id={project.id} title={project.title} image={project.image} />
+			<ProjectPage id={project.id} title={project.title} image={project.image} descriptionShort={project.descriptionShort} />
 		</>
 	);
 }
