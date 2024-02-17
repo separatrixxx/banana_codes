@@ -16,7 +16,7 @@ export const ContactsBlock = (): JSX.Element => {
             <Htag tag='m' onClick={() => router.push('mailto:banana@codes.com')}>
                 banana@codes.com
             </Htag>
-            <Htag tag='m' onClick={() => router.push('mailto:banana@codes.com')}>
+            <Htag tag='m' className={styles.or}>
                 {setLocale(router.locale).or + '...'}
             </Htag>
             <ContactsForm />

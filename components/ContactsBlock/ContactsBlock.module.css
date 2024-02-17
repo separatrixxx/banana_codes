@@ -16,6 +16,11 @@
 	color: var(--white);
 }
 
+.or {
+	cursor: text !important;
+	color: var(--white) !important;
+}
+
 .contactsBlock > h1:active {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
