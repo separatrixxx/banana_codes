@@ -16,7 +16,7 @@
 	align-items: center;
 
 	width: 100%;
-	height: fit-content !important;
+	height: fit-content;
 
 	cursor: pointer;
 
@@ -27,7 +27,7 @@
 
 .image {
 	width: 100%;
-	height: fit-content;
+	height: 100%;
 
 	transition-duration: 300ms;
 }
@@ -68,6 +68,12 @@
 	}
 }
 
+.imageBlock:active .image {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	transform: scale(1.1);
+}
+
 .imageBlock:active > div > span:nth-child(1) {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -81,6 +87,12 @@
 }
 
 @media (min-width: 1024px) {
+	.project:hover .image {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		transform: scale(1.1);
+	}
+
 	.project:hover > div > span:nth-child(1) {
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
