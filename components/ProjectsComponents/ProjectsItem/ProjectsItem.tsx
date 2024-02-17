@@ -25,7 +25,7 @@ export const ProjectsItem = ({ id, title, image }: ProjectInterface): JSX.Elemen
 					priority={true}
 				/>
 			</div>
-			<CrossBlock colorType='two' />
+			{/* <CrossBlock colorType='two' /> */}
 		</div>
 	);
 };
