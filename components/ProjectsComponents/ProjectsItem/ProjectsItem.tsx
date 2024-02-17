@@ -14,6 +14,17 @@ export const ProjectsItem = ({ id, title, image }: ProjectInterface): JSX.Elemen
             <h1 className={styles.title}>
                 {title}
             </h1>
+			<div id='imageBlock' className={styles.imageBlock}>
+				<Image className={styles.image} draggable='false'
+					loader={() => image}
+					src={image}
+					alt='image'
+					width={1}
+					height={1}
+					unoptimized={true}
+					priority={true}
+				/>
+			</div>
 			
 		</div>
 	);
