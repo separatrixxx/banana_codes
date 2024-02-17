@@ -39,7 +39,7 @@ export const MainPage = (): JSX.Element => {
                     <TitleBlock text={setLocale(router.locale).about} />
                     <AboutBlock />
                     <TitleBlock text={setLocale(router.locale).projects} />
-                    
+                    <ProjectsList projects={projects} />
                     <TitleBlock text={setLocale(router.locale).contacts} />
                     <ContactsBlock />
                 </div>
