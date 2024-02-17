@@ -1,6 +1,5 @@
 .project {
 	position: relative;
-	overflow: hidden;
 
 	display: grid;
 
@@ -17,7 +16,7 @@
 	align-items: center;
 
 	width: 100%;
-	height: fit-content;
+	height: fit-content !important;
 
 	cursor: pointer;
 
