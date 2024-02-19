@@ -4,15 +4,15 @@ import { useRouter } from 'next/router';
 import { Htag } from '../../Htag/Htag';
 
 
-export const ProjectsItem = ({ id, title, image, descriptionShort }: ProjectInterface): JSX.Element => {
+export const ProjectsItem = ({ titleId, title, descriptionShort }: ProjectInterface): JSX.Element => {
     const router = useRouter();
     
 	return (
 		<div className={styles.project}>
             <h1 className={styles.title}>
-                {title}
+                {router.locale === 'en' ? title.en : title.ru}
             </h1>
-			<div className={styles.projectDiv} onClick={() => router.push('/project/' + id)}>
+			<div className={styles.projectDiv} onClick={() => router.push('/project/' + titleId)}>
 				<div className={styles.crossDiv1} />
 				<div className={styles.crossDiv2} />
 				<Htag tag='xl' className={styles.description}>

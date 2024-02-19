@@ -1,11 +1,17 @@
 export interface ProjectInterface {
     id: number,
-	title: string,
-    image: string,
+    titleId: string,
+	title: textLocale,
+    image?: string,
     descriptionShort: textLocale,
+    descriptionFull: textLocale,
+    problem: textLocale,
+    link?: string,
+    stack: string,
+    notALink?: boolean,
 }
 
-type textLocale = {
+export type textLocale = {
     en: string,
     ru: string,
 }

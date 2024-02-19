@@ -4,7 +4,7 @@ import { ParsedUrlQuery } from 'querystring';
 import { useRouter } from 'next/router';
 import { setLocale } from '../../../helpers/locale.helper';
 import { ProjectPage } from '../../../page_components/ProjectPage/ProjectPage';
-import { getProjects } from '../../../helpers/projects.helper';
+import { getProjectByTitleId, getProjects } from '../../../helpers/projects.helper';
 import { ProjectInterface } from '../../../interfaces/project.interface';
 
 
@@ -21,7 +21,9 @@ export default function Project({ project }: ProjectProps) {
 				<meta charSet="utf-8" />
 				<link rel="icon" href="/logo.svg" type='image/svg+xml' />
 			</Head>
-			<ProjectPage id={project.id} title={project.title} image={project.image} descriptionShort={project.descriptionShort} />
+			<ProjectPage id={project.id} titleId={project.titleId} title={project.title} image={project.image}
+				descriptionShort={project.descriptionShort} descriptionFull={project.descriptionFull}
+				problem={project.problem} link={project.link} stack={project.stack} notALink={project.notALink} />
 		</>
 	);
 }
@@ -36,7 +38,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     projects.map(project => {
         return locales.map((locale) => {
             return paths.push({
-                params: { project: '' + project.id },
+                params: { project: project.titleId },
                 locale,
             });
         });
@@ -55,9 +57,7 @@ export const getStaticProps: GetStaticProps<ProjectProps> = async ({ params }: G
 		};
 	}
 	try {
-		const projectsList: ProjectInterface[] = getProjects();
-
-		const project = projectsList[params.project ? +params.project : 0];
+		const project: ProjectInterface = getProjectByTitleId(params.project);
 
 		return {
 			props: {

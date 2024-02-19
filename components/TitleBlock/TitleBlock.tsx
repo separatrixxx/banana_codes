@@ -3,9 +3,9 @@ import styles from './TitleBlock.module.css';
 import { Htag } from '../Htag/Htag';
 
 
-export const TitleBlock = ({ text }: TitleBlockProps): JSX.Element => {
+export const TitleBlock = ({ id, text }: TitleBlockProps): JSX.Element => {
     return (
-        <Htag tag='xxl' className={styles.title}>
+        <Htag id={id} tag='xxl' className={styles.title}>
             {'// ' + text}
         </Htag>
     );

@@ -12,6 +12,8 @@ import { ProjectsList } from '../../components/ProjectsComponents/ProjectsList/P
 import { useEffect, useState } from 'react';
 import { getProjects } from '../../helpers/projects.helper';
 import { ProjectInterface } from '../../interfaces/project.interface';
+import { Htag } from '../../components/Htag/Htag';
+import { DevelopmentBlock } from '../../components/DevelopmentBlock/DevelopmentBlock';
 
 
 export const MainPage = (): JSX.Element => {
@@ -36,11 +38,16 @@ export const MainPage = (): JSX.Element => {
                 <MainBlock />
                 <DropsBlock isRotate={false} />
                 <div className={styles.blocksDiv}>
-                    <TitleBlock text={setLocale(router.locale).about} />
+                    <TitleBlock id='about' text={setLocale(router.locale).about} />
                     <AboutBlock />
-                    <TitleBlock text={setLocale(router.locale).projects} />
+                    <Htag tag='m' className={styles.kommoPartners}>
+                        {setLocale(router.locale).kommo_partners}
+                    </Htag>
+                    <TitleBlock id='projects' text={setLocale(router.locale).projects} />
                     <ProjectsList projects={projects} />
-                    <TitleBlock text={setLocale(router.locale).contacts} />
+                    <TitleBlock id='development' text={setLocale(router.locale).development} />
+                    <DevelopmentBlock />
+                    <TitleBlock id='contacts' text={setLocale(router.locale).contacts} />
                     <ContactsBlock />
                 </div>
                 <DropsBlock isRotate={true} />

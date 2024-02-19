@@ -15,6 +15,10 @@
 	justify-items: left;
 }
 
+.kommoPartners {
+	color: var(--white);
+}
+
 @media (max-width: 1024px) {
 	.blocksDiv {
 		width: 80%;
