@@ -10,6 +10,10 @@
 	gap: 60px;
 }
 
+.developmentBlock > a {
+	width: fit-content;
+}
+
 .developmentBlock > h1,
 .developmentBlock > a > h1 {
 	width: fit-content;
