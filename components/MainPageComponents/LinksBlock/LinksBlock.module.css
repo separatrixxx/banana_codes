@@ -1,7 +1,7 @@
 .linksAndArrow {
 	position: absolute;
 	top: 30px;
-	right: 40px;
+	right: 30px;
 
 	display: grid;
 
@@ -65,14 +65,14 @@
 @media (max-width: 580px) {
 	.linksAndArrow {
 		top: 15px;
-		right: 15px;
+		right: 10px;
 	}
 }
 
 @media (max-width: 300px) {
 	.linksAndArrow {
 		top: 10px;
-		right: 10px;
+		right: 7px;
 	}
 
 	.links {
