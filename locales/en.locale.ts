@@ -29,5 +29,6 @@ export const en = {
     development1: "Service for business automation using proprietary AI",
     development2: "Decentralized social network",
     development3: "High quality resting platform",
-    in_development: "in development"
+    in_development: "in development",
+    more_projects: "more projects",
 };

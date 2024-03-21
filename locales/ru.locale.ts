@@ -29,5 +29,6 @@ export const ru = {
     development1: "Сервис для автоматизации бизнеса с использованием собственного ИИ",
     development2: "Децентрализованная социальная сеть",
     development3: "Платформа для отдыха высокого качества",
-    in_development: "в разработке"
+    in_development: "в разработке",
+    more_projects: "more projects",
 };

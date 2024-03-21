@@ -1,0 +1,92 @@
+.linksAndArrow {
+	position: absolute;
+	top: 30px;
+	right: 40px;
+
+	display: grid;
+
+	width: fit-content;
+	height: fit-content;
+	justify-items: right;
+	gap: 20px;
+}
+
+.links {
+	display: grid;
+
+	width: fit-content;
+	grid-template-columns: repeat(4, auto);
+	gap: 15px;
+}
+
+.links > h1 {
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+.links > h1:active {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	color: var(--white) !important;
+}
+
+.arrow > svg {
+	fill: var(--dark);
+
+	height: 85vh;
+	margin-right: 15px;
+}
+
+@media (min-width: 1024px) {
+	.links > h1:hover {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		color: var(--white) !important;
+	}
+}
+
+@media (max-width: 1024px) {
+	.linksAndArrow {
+		top: 20px;
+		right: 20px;
+		gap: 15px;
+	}
+
+	.links {
+		gap: 10px;
+	}
+
+	.arrow > svg {
+		height: 89vh;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 580px) {
+	.linksAndArrow {
+		top: 15px;
+		right: 15px;
+	}
+}
+
+@media (max-width: 300px) {
+	.linksAndArrow {
+		top: 10px;
+		right: 10px;
+	}
+
+	.links {
+		gap: 5px;
+	}
+
+	.arrow > svg {
+		height: 90vh;
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 220px) {
+	.links {
+		grid-template-columns: repeat(2, auto);
+	}
+}

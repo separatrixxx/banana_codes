@@ -3,7 +3,7 @@
 
 	margin-top: 40px;
 
-	color: var(--white);
+	color: var(--white) !important;
 	background: var(--dark);
 
 	font-weight: 600;

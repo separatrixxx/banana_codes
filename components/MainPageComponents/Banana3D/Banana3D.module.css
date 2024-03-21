@@ -1,0 +1,11 @@
+.bananaWrapper {
+	display: grid;
+	justify-items: center;
+
+	align-items: center;
+
+	width: 500px;
+	height: 500px;
+
+	background: red;
+}

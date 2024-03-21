@@ -4,4 +4,5 @@ import { ProjectInterface } from '../../../interfaces/project.interface';
 
 export interface ProjectsListProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
 	projects: ProjectInterface[],
+	itemsCount: number,
 }

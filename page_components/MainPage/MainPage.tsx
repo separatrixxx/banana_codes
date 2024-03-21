@@ -3,7 +3,7 @@ import { Toaster } from 'react-hot-toast';
 import { useRouter } from 'next/router';
 import { AboutBlock } from '../../components/AboutBlock/AboutBlock';
 import { DropsBlock } from '../../components/DropsBlock/DropsBlock';
-import { MainBlock } from '../../components/MainBlock/MainBlock';
+import { MainBlock } from '../../components/MainPageComponents/MainBlock/MainBlock';
 import { TitleBlock } from '../../components/TitleBlock/TitleBlock';
 import { setLocale } from '../../helpers/locale.helper';
 import { Footer } from '../../components/Footer/Footer';
@@ -14,6 +14,7 @@ import { getProjects } from '../../helpers/projects.helper';
 import { ProjectInterface } from '../../interfaces/project.interface';
 import { Htag } from '../../components/Htag/Htag';
 import { DevelopmentBlock } from '../../components/DevelopmentBlock/DevelopmentBlock';
+import { Disclaimer } from '../../components/1Disclaimer/Disclaimer';
 
 
 export const MainPage = (): JSX.Element => {
@@ -35,6 +36,7 @@ export const MainPage = (): JSX.Element => {
 				}}
 			/>
             <div className={styles.wrapper}>
+                <Disclaimer />
                 <MainBlock />
                 <DropsBlock isRotate={false} />
                 <div className={styles.blocksDiv}>
@@ -44,9 +46,10 @@ export const MainPage = (): JSX.Element => {
                         {setLocale(router.locale).kommo_partners}
                     </Htag>
                     <TitleBlock id='projects' text={setLocale(router.locale).projects} />
-                    <ProjectsList projects={projects} />
-                    <TitleBlock id='development' text={setLocale(router.locale).development} />
-                    <DevelopmentBlock />
+                    <ProjectsList projects={projects} itemsCount={3} />
+                    <Htag tag='s' className={styles.moreProjects} onClick={() => router.push('/projects')}>
+                        {setLocale(router.locale).more_projects}
+                    </Htag>
                     <TitleBlock id='contacts' text={setLocale(router.locale).contacts} />
                     <ContactsBlock />
                 </div>

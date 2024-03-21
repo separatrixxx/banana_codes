@@ -1,3 +1,5 @@
+import { ContactsInterface } from "../interfaces/contacts.interface";
+
 export function checkContacts(name: string, email: string, phone: string, message: string,
     setErrorName: (e: any) => void, setErrorEmail: (e: any) => void, setErrorPhone: (e: any) => void,
     setErrorMessage: (e: any) => void, setLoading: (e: any) => void, router: any) {
@@ -12,6 +14,13 @@ export function checkContacts(name: string, email: string, phone: string, messag
     if (+name !== 0 && EMAIL_REGEXP.test(email) && PHONE_REGEXP.test(phone) && +message !== 0) {
         if (name !== null && email !== null && phone !== null && message !== null) {
             setLoading(true);
+
+            let customerData: ContactsInterface = {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message,
+            };
 
             setTimeout(() => setLoading(false), 3000);
         }
@@ -32,5 +41,4 @@ export function checkContacts(name: string, email: string, phone: string, messag
             setErrorMessage(true);
         }
     }
-    
 }

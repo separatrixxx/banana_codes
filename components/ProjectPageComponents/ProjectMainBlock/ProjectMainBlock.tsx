@@ -12,7 +12,7 @@ export const ProjectMainBlock = ({ title, descriptionShort, link }: ProjectMainB
     return (
         <div className={styles.projectMainBlock}>
             <div className={styles.mainDiv}>
-                <Htag tag='l' className={styles.back} onClick={() => router.push('/')}>
+                <Htag tag='l' className={styles.back} onClick={() => router.push('/projects')}>
                     {setLocale(router.locale).back}
                 </Htag>
                 <div className={styles.textDiv}>
