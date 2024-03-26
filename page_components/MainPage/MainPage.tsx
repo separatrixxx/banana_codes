@@ -1,20 +1,19 @@
 import styles from './MainPage.module.css';
 import { Toaster } from 'react-hot-toast';
 import { useRouter } from 'next/router';
-import { AboutBlock } from '../../components/AboutBlock/AboutBlock';
-import { DropsBlock } from '../../components/DropsBlock/DropsBlock';
-import { MainBlock } from '../../components/MainPageComponents/MainBlock/MainBlock';
-import { TitleBlock } from '../../components/TitleBlock/TitleBlock';
+import { DropsBlock } from '../../components/Common/DropsBlock/DropsBlock';
+import { TitleBlock } from '../../components/Main/TitleBlock/TitleBlock';
 import { setLocale } from '../../helpers/locale.helper';
-import { Footer } from '../../components/Footer/Footer';
-import { ContactsBlock } from '../../components/ContactsBlock/ContactsBlock';
-import { ProjectsList } from '../../components/ProjectsComponents/ProjectsList/ProjectsList';
+import { Footer } from '../../components/Common/Footer/Footer';
+import { ContactsBlock } from '../../components/Contacts/ContactsBlock/ContactsBlock';
+import { ProjectsList } from '../../components/Projects/ProjectsList/ProjectsList';
 import { useEffect, useState } from 'react';
 import { getProjects } from '../../helpers/projects.helper';
 import { ProjectInterface } from '../../interfaces/project.interface';
-import { Htag } from '../../components/Htag/Htag';
-import { DevelopmentBlock } from '../../components/DevelopmentBlock/DevelopmentBlock';
+import { Htag } from '../../components/Common/Htag/Htag';
 import { Disclaimer } from '../../components/1Disclaimer/Disclaimer';
+import { MainBlock } from '../../components/Main/MainBlock/MainBlock';
+import { AboutBlock } from '../../components/Main/AboutBlock/AboutBlock';
 
 
 export const MainPage = (): JSX.Element => {

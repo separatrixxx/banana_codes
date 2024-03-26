@@ -1,5 +1,5 @@
 import styles from './Disclaimer.module.css';
-import { Htag } from '../Htag/Htag';
+import { Htag } from '../Common/Htag/Htag';
 
 
 export const Disclaimer = (): JSX.Element => {   

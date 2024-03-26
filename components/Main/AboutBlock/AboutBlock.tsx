@@ -1,7 +1,7 @@
 import styles from './AboutBlock.module.css';
 import { useRouter } from 'next/router';
-import { setLocale } from '../../helpers/locale.helper';
-import { Htag } from '../Htag/Htag';
+import { setLocale } from '../../../helpers/locale.helper';
+import { Htag } from '../../Common/Htag/Htag';
 
 
 export const AboutBlock = (): JSX.Element => {

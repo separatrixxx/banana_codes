@@ -1,16 +1,16 @@
-import { ProjectMainBlockProps } from './ProjectMainBlock.props';
-import styles from './ProjectMainBlock.module.css';
+import { ProjectBlockProps } from './ProjectBlock.props';
+import styles from './ProjectBlock.module.css';
 import { useRouter } from 'next/router';
 import { setLocale } from '../../../helpers/locale.helper';
-import { Htag } from '../../Htag/Htag';
+import { Htag } from '../../Common/Htag/Htag';
 import Link from 'next/link';
 
 
-export const ProjectMainBlock = ({ title, descriptionShort, link }: ProjectMainBlockProps): JSX.Element => {
+export const ProjectBlock = ({ title, descriptionShort, link }: ProjectBlockProps): JSX.Element => {
     const router = useRouter();
 
     return (
-        <div className={styles.projectMainBlock}>
+        <div className={styles.projectBlock}>
             <div className={styles.mainDiv}>
                 <Htag tag='l' className={styles.back} onClick={() => router.push('/projects')}>
                     {setLocale(router.locale).back}

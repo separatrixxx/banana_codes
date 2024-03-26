@@ -1,7 +1,7 @@
 import styles from './ContactsBlock.module.css';
 import { useRouter } from 'next/router';
-import { setLocale } from '../../helpers/locale.helper';
-import { Htag } from '../Htag/Htag';
+import { setLocale } from '../../../helpers/locale.helper';
+import { Htag } from '../../Common/Htag/Htag';
 import { ContactsForm } from '../ContactsForm/ContactsForm';
 
 

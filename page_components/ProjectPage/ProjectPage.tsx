@@ -1,11 +1,11 @@
 import styles from './ProjectPage.module.css';
 import { ProjectInterface } from '../../interfaces/project.interface';
-import { DropsBlock } from '../../components/DropsBlock/DropsBlock';
-import { Footer } from '../../components/Footer/Footer';
-import { TitleBlock } from '../../components/TitleBlock/TitleBlock';
-import { Htag } from '../../components/Htag/Htag';
+import { DropsBlock } from '../../components/Common/DropsBlock/DropsBlock';
+import { Footer } from '../../components/Common/Footer/Footer';
+import { TitleBlock } from '../../components/Main/TitleBlock/TitleBlock';
+import { Htag } from '../../components/Common/Htag/Htag';
 import { useRouter } from 'next/router';
-import { ProjectMainBlock } from '../../components/ProjectPageComponents/ProjectMainBlock/ProjectMainBlock';
+import { ProjectBlock } from '../../components/Projects/ProjectBlock/ProjectMainBlock';
 import { setLocale } from '../../helpers/locale.helper';
 import Link from 'next/link';
 
@@ -16,7 +16,7 @@ export const ProjectPage = ({ id, title, image, descriptionShort, descriptionFul
     
     return (
         <div className={styles.wrapper}>
-            <ProjectMainBlock title={title} descriptionShort={descriptionShort} link={link} />
+            <ProjectBlock title={title} descriptionShort={descriptionShort} link={link} />
             {
                 !notALink ?
                     <>

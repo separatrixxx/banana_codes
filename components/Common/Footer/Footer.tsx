@@ -1,7 +1,7 @@
 import { LocaleChange } from '../LocaleChange/LocaleChange';
 import styles from './Footer.module.css';
 import { useRouter } from 'next/router';
-import { setLocale } from '../../helpers/locale.helper';
+import { setLocale } from '../../../helpers/locale.helper';
 import { Htag } from '../Htag/Htag';
 import { format } from 'date-fns';
 

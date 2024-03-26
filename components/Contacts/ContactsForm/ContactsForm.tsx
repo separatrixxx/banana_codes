@@ -1,10 +1,10 @@
 import styles from './ContactsForm.module.css';
 import { useRouter } from 'next/router';
-import { setLocale } from '../../helpers/locale.helper';
-import { Input } from '../Input/Input';
+import { setLocale } from '../../../helpers/locale.helper';
+import { Input } from '../../Common/Input/Input';
 import { useState } from 'react';
-import { Button } from '../Button/Button';
-import { checkContacts } from '../../helpers/contacts.helper';
+import { Button } from '../../Common/Button/Button';
+import { checkContacts } from '../../../helpers/contacts.helper';
 
 
 export const ContactsForm = (): JSX.Element => {

@@ -1,7 +1,7 @@
 import styles from './LinksBlock.module.css';
 import { useEffect, useState } from 'react';
 import { setLocale } from '../../../helpers/locale.helper';
-import { Htag } from '../../Htag/Htag';
+import { Htag } from '../../Common/Htag/Htag';
 import { useRouter } from 'next/router';
 import Arrow from './arrow.svg';
 

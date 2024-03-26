@@ -1,7 +1,7 @@
 import styles from './ProjectsItem.module.css';
 import { ProjectInterface } from '../../../interfaces/project.interface';
 import { useRouter } from 'next/router';
-import { Htag } from '../../Htag/Htag';
+import { Htag } from '../../Common/Htag/Htag';
 
 
 export const ProjectsItem = ({ titleId, title, descriptionShort }: ProjectInterface): JSX.Element => {
