@@ -10,8 +10,8 @@ export const ContactsBlock = (): JSX.Element => {
     
     return (
         <div className={styles.contactsBlock}>
-            <Htag tag='m' onClick={() => router.push('tel:+88005553535')}>
-                88005553535
+            <Htag tag='m' onClick={() => router.push('tel:+79203290807')}>
+                79203290807
             </Htag>
             <Htag tag='m' onClick={() => router.push('mailto:banana.info@banana.codes')}>
                 banana.info@banana.codes

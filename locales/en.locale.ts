@@ -5,6 +5,7 @@ export const en = {
     error404: "Page not found, 404 error",
     error500: "Server failure, error 500",
     banana_codes: "banana codes",
+    description: "banana codes is a web studio specializing in creating complex web applications. We build online stores, web ecosystems, social networks and much more. We also develop landing pages, business card websites of any complexity, work with WordPress and OpenCart and create our own projects.",
     about: "about",
     about_text: " is a web studio specializing in the development of high-quality and innovative web products. We offer a full range of services and are ready to take on projects of any size. Join us and let's create a web product that will attract the attention of your audience!",
     projects: "projects",
