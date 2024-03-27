@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property='og:title' content={setLocale(router.locale).banana_codes} />
         <meta property='og:description' content={setLocale(router.locale).banana_codes} />
         <meta charSet="utf-8" />
+        <meta name="yandex-verification" content="5c5bca2b0ff92391" />
         <link rel="icon" href="/logo.svg" type='image/svg+xml' />
       </Head>
       <Component {...pageProps} />
