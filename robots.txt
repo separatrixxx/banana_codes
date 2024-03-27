@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://www.gemuani.com/sitemap.xml
+Sitemap: https://www.banana.codes/sitemap.xml
