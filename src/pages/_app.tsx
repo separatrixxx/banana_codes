@@ -57,6 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/logo.svg" type='image/svg+xml' />
       </Head>
       <Script 
+        id="schema-script"
         type="application/ld+json" 
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
