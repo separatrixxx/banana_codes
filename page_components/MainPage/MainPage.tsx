@@ -14,6 +14,7 @@ import { Htag } from '../../components/Common/Htag/Htag';
 import { Disclaimer } from '../../components/1Disclaimer/Disclaimer';
 import { MainBlock } from '../../components/Main/MainBlock/MainBlock';
 import { AboutBlock } from '../../components/Main/AboutBlock/AboutBlock';
+import Link from 'next/link';
 
 
 export const MainPage = (): JSX.Element => {
@@ -46,9 +47,11 @@ export const MainPage = (): JSX.Element => {
                     </Htag>
                     <TitleBlock id='projects' text={setLocale(router.locale).projects} />
                     <ProjectsList projects={projects} itemsCount={3} />
-                    <Htag tag='s' className={styles.moreProjects} onClick={() => router.push('/projects')}>
-                        {setLocale(router.locale).more_projects}
-                    </Htag>
+                    <Link href='/projects'>
+                        <Htag tag='s' className={styles.moreProjects}>
+                            {setLocale(router.locale).more_projects}
+                        </Htag>
+                    </Link>
                     <TitleBlock id='contacts' text={setLocale(router.locale).contacts} />
                     <ContactsBlock />
                 </div>
