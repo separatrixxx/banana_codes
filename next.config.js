@@ -6,15 +6,7 @@ module.exports = {
 	images: {
 		domains: ['bananacodes.vercel.app/'],
 	},
-	async redirects() {
-		return [
-			{
-				source: '/robots.txt',
-				destination: '/api/robots',
-				permanent: false,
-			},
-		];
-	},
+
 	webpack(config) {
 		config.module.rules.push({
 			loader: '@svgr/webpack',
