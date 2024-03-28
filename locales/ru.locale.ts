@@ -32,4 +32,5 @@ export const ru = {
     development3: "Платформа для отдыха высокого качества",
     in_development: "в разработке",
     more_projects: "more projects",
+    located: "Мы находимся в Москве и Тбилиси",
 };

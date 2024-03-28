@@ -3,7 +3,13 @@
 
 	width: 100%;
 	height: fit-content;
-	gap: 20px;
+	gap: 20px !important;
+}
+
+.located {
+	cursor: default !important;
+
+	color: var(--white) !important;
 }
 
 .contactsBlock > h1 {
