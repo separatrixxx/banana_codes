@@ -15,7 +15,6 @@ function Projects(): JSX.Element {
         <meta property='og:title' content={setLocale(router.locale).projects} />
         <meta property='og:description' content={setLocale(router.locale).description} />
         <meta charSet="utf-8" />
-        <link rel="icon" href="/logo.svg" type='image/svg+xml' />
       </Head>
       <ProjectsPage />
     </>
