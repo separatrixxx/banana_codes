@@ -4,3 +4,8 @@ export interface ContactsInterface {
     phone: string,
     message: string,
 }
+
+export interface ContactsData {
+    phone: string,
+    email: string,
+}
