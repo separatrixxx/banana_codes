@@ -54,7 +54,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property='og:description' content={setLocale(router.locale).description} />
         <meta charSet="utf-8" />
         <meta name="yandex-verification" content="5c5bca2b0ff92391" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon_120x120.svg" sizes="120x120" type="image/svg+xml" />
+        <link rel="icon" href="/favicon_48x48.svg" sizes="48x48" type="image/svg+xml" />
       </Head>
       <Script 
         id="schema-script"
