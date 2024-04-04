@@ -31,6 +31,6 @@ export const ru = {
     development2: "Децентрализованная социальная сеть",
     development3: "Платформа для отдыха высокого качества",
     in_development: "в разработке",
-    more_projects: "more projects",
-    located: "Мы находимся в Москве и Тбилиси",
+    more_projects: "ольше проектов",
+    legal_info: "ИП Артём Бондаренко, Тбилиси, Грузия",
 };

@@ -32,5 +32,5 @@ export const en = {
     development3: "High quality resting platform",
     in_development: "in development",
     more_projects: "more projects",
-    located: "We are located in Moscow and Tbilisi",
+    legal_info: "IE Artem Bondarenko, Tbilisi, Georgia",
 };

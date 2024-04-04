@@ -21,7 +21,12 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" /> 
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />  
+        <link rel="icon" href="/favicon.svg" sizes="120x120" type="image/svg+xml" />
+        <link rel="icon" href="/favicon-48x48.ico" sizes="48x48" type="image/x-icon" />
+        <link rel="icon" href="/favicon-144x144.ico" sizes="144x144" type="image/x-icon" />
+        <link rel="icon" href="/favicon-192x192.ico" sizes="192x192" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon-167x167.ico" sizes="167x167" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon-180x180.ico" sizes="180x180" type="image/x-icon" />
       </Head>
       <Script 
         id="gtm-script2"

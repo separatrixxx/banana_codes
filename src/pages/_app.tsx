@@ -54,8 +54,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property='og:description' content={setLocale(router.locale).description} />
         <meta charSet="utf-8" />
         <meta name="yandex-verification" content="5c5bca2b0ff92391" />
-        <link rel="icon" href="/favicon_120x120.svg" sizes="120x120" type="image/svg+xml" />
-        <link rel="icon" href="/favicon_48x48.svg" sizes="48x48" type="image/svg+xml" />
+        <link rel="icon" href="/favicon.svg" sizes="120x120" type="image/svg+xml" />
+        <link rel="icon" href="/favicon-48x48.ico" sizes="48x48" type="image/x-icon" />
+        <link rel="icon" href="/favicon-144x144.ico" sizes="144x144" type="image/x-icon" />
+        <link rel="icon" href="/favicon-192x192.ico" sizes="192x192" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon-167x167.ico" sizes="167x167" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon-180x180.ico" sizes="180x180" type="image/x-icon" />
       </Head>
       <Script 
         id="schema-script"

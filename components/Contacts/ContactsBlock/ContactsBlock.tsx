@@ -14,9 +14,6 @@ export const ContactsBlock = (): JSX.Element => {
     
     return (
         <div className={styles.contactsBlock}>
-            <Htag tag='m' className={styles.located}>
-                {setLocale(router.locale).located}
-            </Htag>
             <Htag tag='m' onClick={() => router.push(`tel:${contactsData.phone}`)}>
                 {contactsData.phone}
             </Htag>
