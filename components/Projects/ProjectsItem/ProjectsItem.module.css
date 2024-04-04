@@ -55,13 +55,13 @@
 	border: 2px solid var(--white);
 }
 
-.project:active > .projectDiv > .crossDiv1 {
+.project:active > a > .projectDiv > .crossDiv1 {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 	transform: rotate(45deg);
 }
 
-.project:active > .projectDiv > .crossDiv2 {
+.project:active > a > .projectDiv > .crossDiv2 {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 	transform: rotate(-45deg);
@@ -79,13 +79,13 @@
 }
 
 @media (min-width: 1024px) {
-	.project:hover > .projectDiv > .crossDiv1 {
+	.project:hover > a > .projectDiv > .crossDiv1 {
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 		transform: rotate(45deg);
 	}
 
-	.project:hover > .projectDiv > .crossDiv2 {
+	.project:hover > a > .projectDiv > .crossDiv2 {
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 		transform: rotate(-45deg);
