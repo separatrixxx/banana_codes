@@ -18,7 +18,7 @@ export const Footer = (): JSX.Element => {
                         {'©' + format(new Date(), 'yyyy') + ' ' + setLocale(router.locale).banana_codes +
                             '. ' + setLocale(router.locale).all_rights_reserved}
                     </Htag>
-                    <Htag tag='xs'>
+                    <Htag tag='xs' className={styles.lang}>
                         {setLocale(router.locale).legal_info}
                     </Htag>
                 </div>

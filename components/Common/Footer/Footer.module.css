@@ -26,6 +26,10 @@
 	gap: 10px;
 }
 
+.lang {
+	font-weight: 500;
+}
+
 @media (max-width: 1024px) {
 	.footerDiv {
 		width: 80%;
