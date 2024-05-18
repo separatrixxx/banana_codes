@@ -67,13 +67,13 @@
 	}
 
 	.arrow > svg {
-		height: 32vh;
+		height: 30vh;
 	}
 }
 
 @media (max-width: 400px) {
 	.arrow > svg {
-		height: 22vh;
+		height: 20vh;
 	}
 }
 
