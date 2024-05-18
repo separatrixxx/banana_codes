@@ -65,6 +65,16 @@
 	.linksAndArrow {
 		right: 10px;
 	}
+
+	.arrow > svg {
+		height: 32vh;
+	}
+}
+
+@media (max-width: 400px) {
+	.arrow > svg {
+		height: 22vh;
+	}
 }
 
 @media (max-width: 300px) {
@@ -77,13 +87,12 @@
 	}
 
 	.arrow > svg {
-		height: 90vh;
 		margin-right: 5px;
 	}
 }
 
 @media (max-width: 220px) {
-	.links {
-		grid-template-columns: repeat(2, auto);
+	.arrow > svg {
+		display: none;
 	}
 }
