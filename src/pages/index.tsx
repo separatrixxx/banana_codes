@@ -2,10 +2,19 @@ import { MainPage } from "../../page_components/MainPage/MainPage";
 import Head from 'next/head';
 import { useRouter } from "next/router";
 import { setLocale } from "../../helpers/locale.helper";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { setProjects } from "../../features/projects/projectsSlice";
+import { getProjects } from "../../helpers/projects.helper";
 
 
 function Main(): JSX.Element {
   const router = useRouter();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setProjects(getProjects()));
+  }, [dispatch]);
 
   return (
     <>

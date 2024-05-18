@@ -6,8 +6,44 @@
 	gap: 70px;
 }
 
+.controlsDiv {
+	position: relative;
+
+	align-items: start;
+
+	height: 600px;
+}
+
 @media (max-width: 1024px) {
 	.projectsDiv {
 		gap: 50px;
+	}
+
+	.controlsDiv {
+		height: 420px;
+	}
+}
+
+@media (max-width: 800px) {
+	.controlsDiv {
+		height: 370px;
+	}
+}
+
+@media (max-width: 580px) {
+	.controlsDiv {
+		height: 320px;
+	}
+}
+
+@media (max-width: 400px) {
+	.controlsDiv {
+		height: 270px;
+	}
+}
+
+@media (max-width: 300px) {
+	.controlsDiv {
+		height: 230px;
 	}
 }

@@ -1,0 +1,25 @@
+.blocksDiv {
+	display: grid;
+
+	width: 77%;
+
+	height: fit-content;
+
+	margin-top: 60px;
+	gap: 60px;
+	justify-items: left;
+}
+
+@media (max-width: 1024px) {
+	.blocksDiv {
+		width: 80%;
+	}
+}
+
+@media (max-width: 580px) {
+	.blocksDiv {
+		width: 85%;
+		margin-top: 40px;
+		gap: 40px;
+	}
+}

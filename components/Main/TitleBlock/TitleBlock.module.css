@@ -1,10 +1,17 @@
 .title {
 	z-index: 10;
-
-	margin-top: 40px;
+	z-index: 2;
 
 	color: var(--white) !important;
-	background: var(--dark);
 
-	font-weight: 600;
+	font-weight: 600 !important;
+}
+
+.lightTitle {
+	background: var(--dark) !important;
+}
+
+.darkTitle {
+	color: var(--dark) !important;
+	background: var(--white) !important;
 }

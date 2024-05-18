@@ -5,6 +5,8 @@ import Script from 'next/script';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 import { setLocale } from '../../helpers/locale.helper';
+import { wrapper } from '../../features/store/store';
+import { Provider } from 'react-redux';
 
 
 declare global {
@@ -14,6 +16,8 @@ declare global {
 }
 
 export default function App({ Component, pageProps }: AppProps) {
+  const { store } = wrapper.useWrappedStore(pageProps);
+  
   const router = useRouter();
 
   useEffect(() => {
@@ -43,10 +47,10 @@ export default function App({ Component, pageProps }: AppProps) {
     "sameAs": [
       "https://www.vk.com/separatrix",
     ]
-  };  
+  };
   
   return (
-    <>
+    <Provider store={store}>
       <Head>
         <title>{setLocale(router.locale).banana_codes}</title>
         <meta name='description' content={setLocale(router.locale).description} />
@@ -68,6 +72,6 @@ export default function App({ Component, pageProps }: AppProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Component {...pageProps} />
-    </>
+    </Provider>
   );
 }

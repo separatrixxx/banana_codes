@@ -2,6 +2,8 @@ import { ProjectInterface } from "../interfaces/project.interface";
 
 
 export function getProjects(): ProjectInterface[] {
+    const colors: string[] = ['#F04D23', '#00A6FF', '#4850E2', '#00FF7B', '#0099FF'];
+
     const project1: ProjectInterface = {
         id: 0,
         titleId: 'gemuani',
@@ -24,6 +26,8 @@ export function getProjects(): ProjectInterface[] {
         },
         link: 'gemuani.com',
         stack: 'react | next.js | typescript | nest.js | css',
+        emoji: '🥝',
+        color: colors[0],
     };
 
     const project2: ProjectInterface = {
@@ -48,6 +52,8 @@ export function getProjects(): ProjectInterface[] {
         },
         link: 'avangardge.com',
         stack: 'react | next.js | typescript | css',
+        emoji: '🤧',
+        color: colors[1],
     };
 
     const project3: ProjectInterface = {
@@ -71,6 +77,8 @@ export function getProjects(): ProjectInterface[] {
         },
         link: 'panel.7club.com.br',
         stack: 'react | next.js | typescript | nest.js | kommo crm | css',
+        emoji: '🦾',
+        color: colors[2],
     };
 
     const project4: ProjectInterface = {
@@ -94,6 +102,8 @@ export function getProjects(): ProjectInterface[] {
         },
         link: 'sekolina.com',
         stack: 'typescript | nest.js | kommo crm | php | javascript | css',
+        emoji: '🌱',
+        color: colors[3],
     };
 
     const project5: ProjectInterface = {
@@ -117,6 +127,8 @@ export function getProjects(): ProjectInterface[] {
         },
         stack: 'typescript | nest.js',
         notALink: true,
+        emoji: '🏦',
+        color: colors[4],
     };
 
     return [project1, project2, project3, project4, project5];
@@ -147,6 +159,8 @@ export function getProjectByTitleId(titleId: string | string[] | undefined): Pro
         },
         link: '',
         stack: '',
+        emoji: '',
+        color: '',
     };
 
     for (let p of projectsList) {

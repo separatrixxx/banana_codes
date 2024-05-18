@@ -6,21 +6,17 @@ import { TitleBlock } from '../../components/Main/TitleBlock/TitleBlock';
 import { setLocale } from '../../helpers/locale.helper';
 import { Footer } from '../../components/Common/Footer/Footer';
 import { ProjectsList } from '../../components/Projects/ProjectsList/ProjectsList';
-import { useEffect, useState } from 'react';
-import { getProjects } from '../../helpers/projects.helper';
-import { ProjectInterface } from '../../interfaces/project.interface';
 import { DevelopmentBlock } from '../../components/Development/DevelopmentBlock/DevelopmentBlock';
 import { Htag } from '../../components/Common/Htag/Htag';
+import { DarkBlock } from '../../components/Common/DarkBlock/DarkBlock';
+import { useSelector } from 'react-redux';
+import { AppState } from '../../features/store/store';
 
 
 export const ProjectsPage = (): JSX.Element => {
     const router = useRouter();
 
-    const [projects, setProjects] = useState<ProjectInterface[]>([]);
-
-    useEffect(() => {
-        setProjects(getProjects());
-	}, []);
+    const projects = useSelector((state: AppState) => state.projects.projects);
     
     return (
         <>
@@ -36,12 +32,12 @@ export const ProjectsPage = (): JSX.Element => {
                     <Htag tag='l' className={styles.back} onClick={() => router.push('/')}>
                         {setLocale(router.locale).back}
                     </Htag>
-                    <TitleBlock text={setLocale(router.locale).projects} />
-                    <ProjectsList projects={projects} itemsCount={projects.length} />
+                    <TitleBlock color='dark' text={setLocale(router.locale).projects} />
+                    <ProjectsList type='list' projects={projects} itemsCount={projects.length} />
                     <TitleBlock text={setLocale(router.locale).development} />
                     <DevelopmentBlock />
                 </div>
-                <DropsBlock isRotate={true} />
+                <DarkBlock />
                 <Footer />
             </div>
         </>

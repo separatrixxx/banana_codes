@@ -6,7 +6,6 @@
 	width: 100%;
 	height: fit-content;
 
-	background: var(--dark);
 	gap: 60px;
 }
 
@@ -19,7 +18,7 @@
 	width: fit-content;
 	margin: 0;
 
-	color: var(--white);
+	color: var(--dark);
 }
 
 .developmentBlock > h1 > span,

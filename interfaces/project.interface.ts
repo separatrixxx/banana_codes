@@ -9,6 +9,8 @@ export interface ProjectInterface {
     link?: string,
     stack: string,
     notALink?: boolean,
+    emoji: string,
+    color: string,
 }
 
 export type textLocale = {

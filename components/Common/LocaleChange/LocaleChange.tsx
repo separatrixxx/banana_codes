@@ -10,7 +10,7 @@ export const LocaleChange = (): JSX.Element => {
 
     return (
         <Link href={router.asPath} locale={router.locale === 'en' ? 'ru' : 'en'}>
-            <Htag tag='s' className={styles.lang}>
+            <Htag tag='xs' className={styles.lang}>
                 {setLocale(router.locale).language}
             </Htag>
         </Link>

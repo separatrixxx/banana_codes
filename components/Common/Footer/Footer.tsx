@@ -14,11 +14,11 @@ export const Footer = (): JSX.Element => {
         <footer className={styles.footer}>
             <div className={styles.footerDiv}>
                 <div className={styles.infoDiv}>
-                    <Htag tag='s' className={styles.lang}>
+                    <Htag tag='xs' className={styles.text}>
                         {'©' + format(new Date(), 'yyyy') + ' ' + setLocale(router.locale).banana_codes +
                             '. ' + setLocale(router.locale).all_rights_reserved}
                     </Htag>
-                    <Htag tag='xs' className={styles.lang}>
+                    <Htag tag='xs' className={styles.text}>
                         {setLocale(router.locale).legal_info}
                     </Htag>
                 </div>

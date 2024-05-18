@@ -13,7 +13,7 @@
 	cursor: pointer;
 	transition-duration: 300ms;
 
-	color: var(--white) !important;
+	color: var(--dark) !important;
 }
 
 .errorText:active {
