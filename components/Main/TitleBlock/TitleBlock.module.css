@@ -2,7 +2,7 @@
 	z-index: 10;
 	z-index: 2;
 
-	color: var(--white) !important;
+	color: var(--dark) !important;
 
 	font-weight: 600 !important;
 }
@@ -14,4 +14,8 @@
 .darkTitle {
 	color: var(--dark) !important;
 	background: var(--white) !important;
+}
+
+.primaryTitle {
+	color: var(--primary) !important;
 }

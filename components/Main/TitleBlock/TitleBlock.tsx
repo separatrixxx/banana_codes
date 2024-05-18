@@ -9,6 +9,7 @@ export const TitleBlock = ({ id, color, text }: TitleBlockProps): JSX.Element =>
         <Htag id={id} tag='xxl' className={cn(styles.title, {
             [styles.lightTitle]: color === 'light',
             [styles.darkTitle]: color === 'dark',
+            [styles.primaryTitle]: color === 'primary',
         })}>
             {'// ' + text}
         </Htag>
