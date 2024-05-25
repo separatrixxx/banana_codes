@@ -5,9 +5,6 @@ import { TitleBlock } from '../../components/Main/TitleBlock/TitleBlock';
 import { setLocale } from '../../helpers/locale.helper';
 import { Footer } from '../../components/Common/Footer/Footer';
 import { ContactsBlock } from '../../components/Contacts/ContactsBlock/ContactsBlock';
-import { useEffect, useState } from 'react';
-import { getProjects } from '../../helpers/projects.helper';
-import { ProjectInterface } from '../../interfaces/project.interface';
 import { MainBlock } from '../../components/Main/MainBlock/MainBlock';
 import { DivBlock } from '../../components/Main/DivBlock/DivBlock';
 import { ProjectsSlider } from '../../components/Projects/ProjectsSlider/ProjectsSlider';
@@ -42,7 +39,7 @@ export const MainPage = (): JSX.Element => {
                 </DivBlock>
                 <div className={styles.darkBlock}>
                     <DivBlock>
-                        <TitleBlock id='contacts' text={setLocale(router.locale).contacts} />
+                        <TitleBlock id='contacts' color='light' text={setLocale(router.locale).contacts} />
                         <ContactsBlock />
                     </DivBlock>
                 </div>

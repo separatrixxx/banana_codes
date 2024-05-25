@@ -8,6 +8,7 @@
 }
 
 .lightTitle {
+	color: var(--white) !important;
 	background: var(--dark) !important;
 }
 

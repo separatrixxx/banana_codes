@@ -63,17 +63,18 @@
 
 @media (max-width: 580px) {
 	.linksAndArrow {
+		top: 20px;
 		right: 10px;
 	}
 
 	.arrow > svg {
-		height: 30vh;
+		height: 32vh;
 	}
 }
 
 @media (max-width: 400px) {
 	.arrow > svg {
-		height: 20vh;
+		height: 22vh;
 	}
 }
 
