@@ -1,9 +1,13 @@
+import { LoadingDotsProps } from './LoadingDots.props';
 import styles from './LoadingDots.module.css';
+import cn from 'classnames';
 
-export const LoadingDots = (): JSX.Element => {
-  
+
+export const LoadingDots = ({ color }: LoadingDotsProps): JSX.Element => {
     return (
-        <span className={styles.loading}>
+        <span className={cn(styles.loading, {
+            [styles.loadingPrimary]: color === 'primary',
+        })}>
             <span />
             <span />
             <span />

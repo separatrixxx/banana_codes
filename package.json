@@ -33,6 +33,7 @@
     "framer-motion": "^11.0.3",
     "next-redux-wrapper": "^8.1.0",
     "react-hot-toast": "^2.4.1",
+    "react-intersection-observer": "^9.10.3",
     "sass": "^1.74.1",
     "scroll-into-view": "^1.16.2",
     "stylelint": "^13.0.0",

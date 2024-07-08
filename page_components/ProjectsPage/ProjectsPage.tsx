@@ -33,7 +33,7 @@ export const ProjectsPage = (): JSX.Element => {
                         {setLocale(router.locale).back}
                     </Htag>
                     <TitleBlock color='dark' text={setLocale(router.locale).projects} />
-                    <ProjectsList type='list' projects={projects} itemsCount={projects.length} />
+                    <ProjectsList type='list' projects={projects} />
                     <TitleBlock text={setLocale(router.locale).development} />
                     <DevelopmentBlock />
                 </div>

@@ -134,42 +134,14 @@ export function getProjects(): ProjectInterface[] {
     return [project1, project2, project3, project4, project5];
 }
 
-export function getProjectByTitleId(titleId: string | string[] | undefined): ProjectInterface {
+export function getProjectByTitleId(titleId: string | string[] | undefined): ProjectInterface | undefined {
     const projectsList: ProjectInterface[] = getProjects();
-
-    let project: ProjectInterface = {
-        id: 0,
-        titleId: '',
-        title: {
-            en: '',
-            ru: '',
-        },
-        image: '',
-        descriptionShort: {
-            en: '',
-            ru: '',
-        },
-        descriptionFull: {
-            en: '',
-            ru: '',
-        },
-        problem: {
-            en: '',
-            ru: '',
-        },
-        link: '',
-        stack: '',
-        emoji: '',
-        color: '',
-    };
 
     for (let p of projectsList) {
         if (p.titleId === titleId) {
-            project = p;
-
-            break;
+            return p;
         }
     }
 
-    return project;
+    return undefined;
 }
