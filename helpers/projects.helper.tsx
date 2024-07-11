@@ -134,14 +134,8 @@ export function getProjects(): ProjectInterface[] {
     return [project1, project2, project3, project4, project5];
 }
 
-export function getProjectByTitleId(titleId: string | string[] | undefined): ProjectInterface | undefined {
+export function getProjectByTitleId(titleId: string | string[] | undefined): ProjectInterface {
     const projectsList: ProjectInterface[] = getProjects();
 
-    for (let p of projectsList) {
-        if (p.titleId === titleId) {
-            return p;
-        }
-    }
-
-    return undefined;
+    return projectsList.filter(p => p.titleId === titleId)[0];
 }
