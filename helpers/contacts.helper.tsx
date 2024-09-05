@@ -1,5 +1,6 @@
 import { ContactsInterface } from "../interfaces/contacts.interface";
 
+
 export function checkContacts(name: string, email: string, phone: string, message: string,
     setErrorName: (e: any) => void, setErrorEmail: (e: any) => void, setErrorPhone: (e: any) => void,
     setErrorMessage: (e: any) => void, setLoading: (e: any) => void, router: any) {
