@@ -4,7 +4,6 @@ import { useRouter } from 'next/router';
 import { setLocale } from '../../../helpers/locale.helper';
 import { Htag } from '../Htag/Htag';
 import { format } from 'date-fns';
-import { getContactsData } from '../../../helpers/get_contacts';
 
 
 export const Footer = (): JSX.Element => {
