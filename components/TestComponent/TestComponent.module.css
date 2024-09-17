@@ -9,7 +9,7 @@
 	height: 100vh;
 
 	background: var(--dark);
-	place-items: center;
+	justify-items: center;
 }
 
 .circularText {
@@ -28,7 +28,6 @@
 
 	font-size: 22px;
 	font-weight: 700;
-	transform-style: flat;
 }
 
 .testIcon {
