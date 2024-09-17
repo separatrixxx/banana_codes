@@ -10,6 +10,7 @@ import { DivBlock } from '../../components/Main/DivBlock/DivBlock';
 import { ProjectsSlider } from '../../components/Projects/ProjectsSlider/ProjectsSlider';
 import { Htag } from '../../components/Common/Htag/Htag';
 import { AboutBlock } from '../../components/Main/AboutBlock/AboutBlock';
+import { TestComponent } from '../../components/TestComponent/TestComponent';
 
 
 export const MainPage = (): JSX.Element => {

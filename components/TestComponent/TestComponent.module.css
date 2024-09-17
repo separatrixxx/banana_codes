@@ -1,0 +1,36 @@
+.testComponent {
+	position: relative;
+
+	display: grid;
+	overflow: hidden;
+	align-items: end;
+
+	width: 100%;
+	height: 100vh;
+
+	background: var(--dark);
+	place-items: center;
+}
+
+.circularText {
+	position: absolute;
+
+	height: 86vh;
+}
+
+.circularText span {
+	position: absolute;
+	left: 50%;
+
+	transform-origin: 0 43vh;
+
+	color: var(--white);
+
+	font-size: 22px;
+	font-weight: 700;
+	transform-style: flat;
+}
+
+.testIcon {
+	height: 70vh;
+}
