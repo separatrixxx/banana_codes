@@ -21,6 +21,7 @@
 
 .links > h1 {
 	cursor: pointer;
+	user-select: none;
 	transition-duration: 300ms;
 }
 
