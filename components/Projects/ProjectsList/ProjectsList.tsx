@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { getProjectByTitleId } from '../../../helpers/projects.helper';
 import { useInView } from 'react-intersection-observer';
 import { LoadingDots } from '../../Common/LoadingDots/LoadingDots';
+import { ProjectInterface } from '../../../interfaces/project.interface';
 import cn from 'classnames';
 
 
@@ -13,7 +14,7 @@ export const ProjectsList = ({ type, projects, itemsCount }: ProjectsListProps):
 	const [titleId, setTitleId] = useState<string>('gemuani');
 
 	const limit = 5;
-	const [displayedProjects, setDisplayedProjects] = useState(projects.slice(0, limit));
+	const [displayedProjects, setDisplayedProjects] = useState<ProjectInterface[]>(projects.slice(0, limit));
     const [ref, inView] = useInView();
 
     useEffect(() => {
