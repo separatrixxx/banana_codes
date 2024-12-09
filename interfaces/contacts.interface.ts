@@ -6,6 +6,7 @@ export interface ContactsInterface {
 }
 
 export interface ContactsData {
-    phone: string,
+    phone?: string,
+    tg?: string,
     email: string,
 }

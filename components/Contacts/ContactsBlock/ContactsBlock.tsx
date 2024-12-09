@@ -17,6 +17,9 @@ export const ContactsBlock = (): JSX.Element => {
             <Htag tag='m' onClick={() => router.push(`tel:${contactsData.phone}`)}>
                 {contactsData.phone}
             </Htag>
+            <Htag tag='m' onClick={() => router.push(`https://t.me/${contactsData.tg}`)}>
+                {`tg: ${contactsData.tg}`}
+            </Htag>
             <Htag tag='m' onClick={() => router.push(`mailto:${contactsData.email}`)}>
                 {contactsData.email}
             </Htag>

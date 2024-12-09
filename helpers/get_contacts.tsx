@@ -3,7 +3,7 @@ import { ContactsData } from "../interfaces/contacts.interface";
 
 export function getContactsData(): ContactsData {
     return {
-        phone: '+995555169827',
+        tg: 'Highpriority779',
         email: 'contact@banana.codes',
     }
 }
