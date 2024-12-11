@@ -25,7 +25,7 @@ export const ProjectsSlider = ({ itemsCount }: ProjectsSliderProps): JSX.Element
             speed={1000}
         >
             {
-                projects.slice(0, itemsCount).map(project => (
+                projects.slice(0, itemsCount).reverse().map(project => (
                     <SwiperSlide key={project.id}>
                         <ProjectSlide project={project} />
                     </SwiperSlide>

@@ -36,7 +36,7 @@ export const MainPage = (): JSX.Element => {
                 </DivBlock>
                 <DivBlock>
                     <TitleBlock id='projects' color='dark' text={setLocale(router.locale).projects} />
-                    <ProjectsSlider itemsCount={5} />
+                    <ProjectsSlider itemsCount={11} />
                 </DivBlock>
                 <div className={styles.darkBlock}>
                     <DivBlock>

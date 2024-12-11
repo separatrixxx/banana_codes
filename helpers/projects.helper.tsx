@@ -2,7 +2,9 @@ import { ProjectInterface } from "../interfaces/project.interface";
 
 
 export function getProjects(): ProjectInterface[] {
-    const colors: string[] = ['#F04D23', '#00A6FF', '#4850E2', '#00FF7B', '#0099FF'];
+    const colors: string[] = ['#F04D23', '#00A6FF', '#4850E2', '#00FF7B', '#0099FF', '#9ABEE0',
+        '#00B2E3', '#CC8358', '#D01120', '#00412D', '#FFBE03',
+    ];
 
     const project1: ProjectInterface = {
         id: 0,
@@ -131,7 +133,164 @@ export function getProjects(): ProjectInterface[] {
         color: colors[4],
     };
 
-    return [project1, project2, project3, project4, project5];
+    const project6: ProjectInterface = {
+        id: 5,
+        titleId: 'techunit',
+        title: {
+            en: 'TechUnit',
+            ru: 'TechUnit',
+        },
+        image: '/TechUnitVideo.mp4',
+        descriptionShort: {
+            en: 'Website for TechUnit, a project management company in healthcare',
+            ru: 'Сайт для TechUnit — компании проектного управления в сфере здравоохранения',
+        },
+        descriptionFull: {
+            en: 'Our studio had the privilege of creating a modern, user-friendly website for TechUnit, a project management company specializing in healthcare solutions. TechUnit focuses on medical devices, food supplements, and skincare products, offering end-to-end services for brand launches and business growth. Their team evaluates projects, identifies potential investors, and develops actionable strategies to help their clients succeed. The website we designed emphasizes TechUnit’s collaborative approach and their commitment to expanding possibilities in the healthcare industry',
+            ru: 'Наша студия разработала современный и удобный сайт для компании TechUnit, занимающейся проектным управлением в сфере здравоохранения. TechUnit специализируется на медицинских устройствах, пищевых добавках и продуктах по уходу за кожей, предоставляя полный спектр услуг для запуска брендов и увеличения продаж. Команда TechUnit проводит оценку проектов, находит подходящих инвесторов и разрабатывает четкие стратегии для достижения успеха клиентов. Сайт, созданный нами, подчеркивает их командный подход и стремление к расширению возможностей в индустрии здравоохранения',
+        },
+        problem: {
+            en: 'TechUnit approached us with a request to design a landing page that would reflect their corporate identity and effectively communicate the core information about the company. The goal was to create a sleek and professional portal aligned with their branding and business objectives',
+            ru: 'Компания TechUnit обратилась к нам с запросом на разработку лендинга, который отражал бы их фирменный стиль и содержал ключевую информацию о компании. Основной задачей было создание стильного и профессионального портала, соответствующего их бренду и бизнес-целям',
+        },
+        link: 'techunit.cz',
+        stack: 'react | next.js | typescript | css',
+        emoji: '🫧',
+        color: colors[5],
+    };
+
+    const project7: ProjectInterface = {
+        id: 6,
+        titleId: 'signal',
+        title: {
+            en: 'SIGNAL',
+            ru: 'SIGNAL',
+        },
+        image: '/SignalVideo.mp4',
+        descriptionShort: {
+            en: 'Website for SIGNAL, a car rental company in Georgia',
+            ru: 'Сайт для SIGNAL — компании по аренде автомобилей в Грузии',
+        },
+        descriptionFull: {
+            en: 'Our studio developed a comprehensive and user-friendly platform for SIGNAL, a car rental company based in Georgia. The platform allows users to browse and select vehicles, calculate delivery options, and send rental requests. We focused on creating a seamless experience that combines functionality and aesthetic appeal, tailored to SIGNAL’s specific business needs and the local market',
+            ru: 'Наша студия разработала полноценную и удобную платформу для компании SIGNAL, предоставляющей услуги аренды автомобилей в Грузии. Платформа позволяет пользователям выбирать автомобили, рассчитывать стоимость доставки и отправлять заявки на аренду. Мы сделали акцент на создании функционального и визуально привлекательного решения, соответствующего бизнес-задачам SIGNAL и особенностям локального рынка',
+        },
+        problem: {
+            en: 'SIGNAL approached us with a request to create a complete platform for car selection and rental, including delivery cost calculation and a rental request system. The goal was to design a modern, user-centric solution that supports their growing business in Georgia',
+            ru: 'Компания SIGNAL обратилась к нам с запросом на разработку полноценной платформы для выбора и аренды автомобилей, включая расчёт стоимости доставки и систему отправки заявок. Основной задачей было создание современного решения, ориентированного на удобство пользователей и поддерживающего растущий бизнес компании в Грузии',
+        },
+        link: 'signal-car-rental.vercel.app',
+        stack: 'react | next.js | typescript | strapi | redux | css',
+        emoji: '🚗',
+        color: colors[6],
+    };
+
+    const project8: ProjectInterface = {
+        id: 7,
+        titleId: 'divo',
+        title: {
+            en: 'Divo',
+            ru: 'Divo',
+        },
+        image: '/DivoVideo.mp4',
+        descriptionShort: {
+            en: 'Mini app for Telegram – Divo, an economic simulation game',
+            ru: 'Мини-приложение для Telegram — Divo, экономическая игра',
+        },
+        descriptionFull: {
+            en: 'Our studio created a Telegram mini app called Divo, an engaging economic simulation game. Players can select models, earn Divo coins, and manage their in-game finances. The app features deposits, a friend system, a clicker mechanic, and daily tasks, providing users with a dynamic and interactive experience',
+            ru: 'Наша студия разработала мини-приложение для Telegram под названием Divo — увлекательную экономическую игру. Пользователи могут выбирать моделей, зарабатывать диво-коины и управлять своими игровыми финансами. Приложение включает в себя систему депозитов, друзей, механику кликера и ежедневные задания, предлагая пользователям динамичный и интерактивный опыт',
+        },
+        problem: {
+            en: 'The client approached us with the idea of creating an economic simulation game for Telegram. The goal was to develop a mini app with engaging features like model selection, virtual currency, deposits, and daily tasks to ensure high user engagement',
+            ru: 'Клиент обратился к нам с идеей создания экономической игры для Telegram. Основной задачей было разработать мини-приложение с увлекательным функционалом, включающим выбор моделей, виртуальную валюту, депозиты и ежедневные задания, чтобы обеспечить высокий уровень вовлеченности пользователей',
+        },
+        link: 't.me/divo_fashion_bot',
+        stack: 'react | next.js | typescript | redux | redis | postgresql | css',
+        emoji: '💄',
+        color: colors[7],
+    };  
+    
+    const project9: ProjectInterface = {
+        id: 8,
+        titleId: 'accent',
+        title: {
+            en: 'Accent',
+            ru: 'Акцент',
+        },
+        image: '/AccentVideo.mp4',
+        descriptionShort: {
+            en: 'Telegram mini app for an online school preparing students for exams',
+            ru: 'Мини-приложение для Telegram — онлайн-школа подготовки к ЕГЭ',
+        },
+        descriptionFull: {
+            en: 'Our studio developed a Telegram mini app called Accent, designed for an online school specializing in preparation for various exams, including the Unified State Exam (EGE). The platform provides a unified solution for multiple subjects, allowing students to solve problems, track their progress with detailed statistics, receive answers from teachers, and purchase subscriptions for extended access. The app ensures an intuitive and engaging learning experience for students',
+            ru: 'Наша студия разработала мини-приложение для Telegram под названием «Акцент» для онлайн-школы, специализирующейся на подготовке к различным экзаменам, включая ЕГЭ. Платформа представляет собой единое решение для нескольких предметов, предоставляя пользователям возможность решать задачи, отслеживать прогресс с помощью статистики, получать ответы от учителей и оформлять подписку для расширенного доступа. Приложение обеспечивает интуитивный и увлекательный процесс обучения для школьников',
+        },
+        problem: {
+            en: 'The client approached us with the goal of creating a unified platform for their online school in Telegram. The app needed to support multiple subjects, provide features like problem-solving, progress tracking, teacher feedback, and subscription management to enhance the learning process and user engagement',
+            ru: 'Клиент обратился к нам с целью создания единой платформы для своей онлайн-школы в Telegram. Приложение должно было поддерживать несколько предметов, предоставлять функционал для решения задач, отслеживания прогресса, получения обратной связи от учителей и управления подписками, чтобы улучшить процесс обучения и вовлеченность пользователей',
+        },
+        link: 't.me/accentune_bot',
+        stack: 'react | next.js | typescript | redux | redis | postgresql | css',
+        emoji: '🎓',
+        color: colors[8],
+    };
+
+    const project10: ProjectInterface = {
+        id: 9,
+        titleId: 'prioritet',
+        title: {
+            en: 'Prioritet',
+            ru: 'Приоритет',
+        },
+        image: '/PrioritetVideo.mp4',
+        descriptionShort: {
+            en: 'Web portal for OOO "Prioritet Snab" with advanced features for buyers and sellers',
+            ru: 'Веб-портал для ООО "Приоритет Снаб" с расширенным функционалом для покупателей и продавцов',
+        },
+        descriptionFull: {
+            en: 'Our studio developed a web portal for OOO "Prioritet Snab," designed to streamline the purchasing and selling processes for both buyers and sellers. The platform includes personalized accounts, smart search functionality, product purchasing, favorites, shopping carts, and advanced filters. This solution enhances user experience and optimizes the interaction between all participants in the marketplace.',
+            ru: 'Наша студия разработала веб-портал для ООО "Приоритет Снаб," предназначенный для оптимизации процессов покупки и продажи для покупателей и продавцов. Платформа включает в себя персонализированные кабинеты, умный поиск, возможность покупки товаров, избранное, корзину и продвинутые фильтры. Это решение улучшает пользовательский опыт и оптимизирует взаимодействие всех участников на платформе.',
+        },
+        problem: {
+            en: 'The client approached us with the task of creating a comprehensive portal for managing buyer and seller interactions. The system needed to include personal accounts, intelligent search capabilities, shopping features, favorites, carts, and robust filtering options to enhance usability and functionality.',
+            ru: 'Клиент обратился к нам с задачей создать полноценный портал для управления взаимодействием покупателей и продавцов. Система должна была включать персонализированные кабинеты, интеллектуальный поиск, функционал для покупок, избранное, корзину и продвинутые фильтры для повышения удобства и функциональности.',
+        },
+        link: 'prioritet-portal.vercel.app',
+        stack: 'react | next.js | typescript | redux | redis | postgresql | css',
+        emoji: '🌱',
+        color: colors[9],
+    };
+
+    const project11: ProjectInterface = {
+        id: 10,
+        titleId: 'banana_vpn',
+        title: {
+            en: 'banana.vpn',
+            ru: 'banana.vpn',
+        },
+        image: '/BananaVPNVideo.mp4',
+        descriptionShort: {
+            en: 'Telegram mini app for managing VPN subscriptions',
+            ru: 'Мини-приложение для Telegram для управления подписками на VPN',
+        },
+        descriptionFull: {
+            en: 'Our studio developed banana.vpn, a Telegram mini app designed to manage VPN subscriptions. This app allows users to download the launcher, manage their subscriptions, and control connected devices. As our own in-house project, banana.vpn showcases our ability to create robust, user-friendly solutions tailored to modern digital needs.',
+            ru: 'Наша студия разработала banana.vpn — мини-приложение для Telegram, предназначенное для управления подписками на VPN. Приложение позволяет скачивать лаунчер, управлять подписками и контролировать подключенные устройства. Это наш собственный проект, демонстрирующий нашу способность создавать надёжные и удобные решения, отвечающие современным цифровым потребностям.',
+        },
+        problem: {
+            en: 'As an in-house project, our goal was to create a versatile and user-friendly solution for managing VPN subscriptions. The app needed to include features such as a launcher download, subscription management, and device control, ensuring seamless functionality for users.',
+            ru: 'Как собственный проект, наша задача заключалась в создании универсального и удобного решения для управления подписками на VPN. Приложение должно было включать такие функции, как скачивание лаунчера, управление подписками и контроль подключённых устройств, обеспечивая бесперебойную работу для пользователей.',
+        },
+        link: 't.me/banana_codes_vpn_bot',
+        stack: 'react | next.js | typescript | redux | redis | postgresql | css',
+        emoji: '🍌',
+        color: colors[10],
+    };    
+
+    return [project1, project2, project3, project4, project5, project6, project7,
+        project8, project9, project10, project11];
 }
 
 export function getProjectByTitleId(titleId: string | string[] | undefined): ProjectInterface {

@@ -28,7 +28,7 @@ export const ProjectsList = ({ type, projects, itemsCount }: ProjectsListProps):
 		return (
 			<>
 				<div className={styles.projectsDiv}>
-					{displayedProjects.map((p, index) => (
+					{displayedProjects.reverse().map((p, index) => (
 						<ProjectsItem key={`${p.id}-${index}`} id={p.id} titleId={p.titleId} title={p.title} image={p.image}
 							descriptionShort={p.descriptionShort} descriptionFull={p.descriptionFull}
 							problem={p.problem} link={p.link} stack={p.stack} emoji={p.emoji} color={p.color} />
